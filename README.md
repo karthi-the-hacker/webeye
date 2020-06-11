@@ -5,7 +5,8 @@ Steps to install :
 2) cd webeye
 3) chmod 777 .banner
 4) chmod 777 *
-5)./webeye
+5) pip install -r requirements.txt
+6) ./webeye
 
 
 
