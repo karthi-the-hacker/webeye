@@ -1,0 +1,15 @@
+#!/bin/bash
+
+clear
+./.banner
+sleep 3
+
+read -p "Enter file name with correct path : " fl
+read -p "Enter comany name: " comp
+
+mkdir ~/recon/$comp
+mkdir ~/recon/$comp/webeye
+
+python webeye.py -i $fl -o ~/recon/$comp/webeye/
+sleep 2 
+python webeye.py -i $fl -o ~/recon/$comp/webeye/ -p 443
